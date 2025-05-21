@@ -15,25 +15,25 @@ public class Servos extends SubsystemBase {
   int pulse_0 = 1500; 
   int pulse_1 = 1500; 
   // Initialize the servo hub
-  ServoHub m_servoHub = new ServoHub(2);
+  //ServoHub m_servoHub = new ServoHub(2);
   // Obtain a servo channel controller
-  ServoChannel m_channel0 = m_servoHub.getServoChannel(ChannelId.kChannelId0);
-  ServoChannel m_channel1 = m_servoHub.getServoChannel(ChannelId.kChannelId1);
-  ServoChannel m_channel2 = m_servoHub.getServoChannel(ChannelId.kChannelId2);
-  ServoChannel m_channel3 = m_servoHub.getServoChannel(ChannelId.kChannelId3);
+  //ServoChannel m_channel0 = m_servoHub.getServoChannel(ChannelId.kChannelId0);
+  //ServoChannel m_channel1 = m_servoHub.getServoChannel(ChannelId.kChannelId1);
+  //ServoChannel m_channel2 = m_servoHub.getServoChannel(ChannelId.kChannelId2);
+  //ServoChannel m_channel3 = m_servoHub.getServoChannel(ChannelId.kChannelId3);
 
   public Servos() {
-    m_servoHub.setBankPulsePeriod(ServoHub.Bank.kBank0_2, 4000);
-    m_servoHub.setBankPulsePeriod(ServoHub.Bank.kBank3_5, 4000);
-    m_channel0.setPowered(true);
-    m_channel1.setPowered(true);
-    m_channel2.setPowered(true);
-    m_channel3.setPowered(true);
+    //m_servoHub.setBankPulsePeriod(ServoHub.Bank.kBank0_2, 4000);
+    //m_servoHub.setBankPulsePeriod(ServoHub.Bank.kBank3_5, 4000);
+    //m_channel0.setPowered(true);
+    //m_channel1.setPowered(true);
+    //m_channel2.setPowered(true);
+    //m_channel3.setPowered(true);
 
-    m_channel0.setEnabled(true);
-    m_channel1.setEnabled(true);
-    m_channel2.setEnabled(true);
-    m_channel3.setEnabled(true);
+    //m_channel0.setEnabled(true);
+    //m_channel1.setEnabled(true);
+    //m_channel2.setEnabled(true);
+    //m_channel3.setEnabled(true);
   }
 
   @Override
@@ -44,22 +44,22 @@ public class Servos extends SubsystemBase {
   }
 
   public void openCageGuide(){
-    m_channel0.setPulseWidth(1450); 
-    m_channel1.setPulseWidth(1550);
+    //m_channel0.setPulseWidth(1450); 
+    //m_channel1.setPulseWidth(1550);
   }
 
   public void closeCageGuide(){
-    m_channel0.setPulseWidth(2100); 
-    m_channel1.setPulseWidth(850);
+    //m_channel0.setPulseWidth(2100); 
+    //m_channel1.setPulseWidth(850);
   }
 
   public void openCageGrip(){
-    m_channel2.setPulseWidth(1600); 
-    m_channel3.setPulseWidth(1250);
+    //m_channel2.setPulseWidth(1600); 
+    //m_channel3.setPulseWidth(1250);
   }
 
   public void closeCageGrip(){
-    m_channel2.setPulseWidth(900); 
-    m_channel3.setPulseWidth(2000);
+    //m_channel2.setPulseWidth(900); 
+    //m_channel3.setPulseWidth(2000);
   }
 }
